@@ -27,7 +27,7 @@ check_db () {
     cn5-db check || complain_db
 }
 
-check_disk_space
-pip install -e '.[vectors]'
-check_db
+#check_disk_space
+#pip install -e '.[vectors]'
+#check_db
 snakemake --resources 'ram=30' -j 2
