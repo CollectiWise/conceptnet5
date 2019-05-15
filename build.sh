@@ -9,7 +9,7 @@ check_disk_space() {
         echo "to a larger drive."
         echo
         echo "Your data directory is currently on this drive:"
-        df -h data
+        df -h /var/lib/postgresql/data
         exit 1
     fi
 }
